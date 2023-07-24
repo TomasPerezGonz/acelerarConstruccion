@@ -1349,3 +1349,7 @@ input, select, textarea {
 				}
 
 		}
+/* Se crea clase para ajustar tamaño de iconos de RRSS */
+		img.smallimg {
+			height: 50px;
+		}
