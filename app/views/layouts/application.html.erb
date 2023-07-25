@@ -10,11 +10,15 @@
     <%= javascript_importmap_tags %>
     <!--Se agrega la ruta de archivos CSS-->
     <link rel="stylesheet" href="assets/main.css" />
-      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
   </head>
   <!--Se trae el contenedor desde Indez para agregar el renderizado del header desde el archivo en carpeta shared-->
     <div id="main">
-      <%= render 'shared/header' %>
+      <article>
+            <%= link_to "Información de la galería", pages_about_path, class: "information-link" %>
+      </article>
+      <%= render 'shared/header' %>      
       <%= yield %>
       <%= render 'shared/footer'%>
   </div>
